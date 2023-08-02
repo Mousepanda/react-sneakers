@@ -22,8 +22,9 @@ function App() {
 	}
 
 	const onRemoveToCart = (obj) => {
-		setCartItems([(prev) => [...prev, obj.delete]]);
+		setCartItems((prev) => prev.filter((item) => item !== obj));
 	}
+	
 
 	return (
 		<div className="wrapper clear">
