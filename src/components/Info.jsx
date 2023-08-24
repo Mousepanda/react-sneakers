@@ -8,7 +8,7 @@ const Info = ({ title, description, image  }) => {
 		<div className="cartEmpty d-flex align-center justify-center flex-column flex">
 			<img className="mb-20" width={120} src={image} alt="cart" />
 			<h2>{title}</h2>
-			<p>{description}</p>
+			<p className='opacity-5'>{description}</p>
 			<button onClick={() => setCartOpened(false)} className="greenButton">
 				<img src="/img/arrow.svg" alt="Arrow" />
 				Вернуться назад
