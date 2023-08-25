@@ -111,7 +111,7 @@ function App() {
 			<Header onClickCart={() => setCartOpened(true)} />
 
 			<Routes>
-				<Route path="/" element={<Home
+				<Route path="" element={<Home
 					items={items}
 					cartItems={cartItems}
 					searchValue={searchValue}
@@ -121,8 +121,8 @@ function App() {
 					onAddToFavorite={onAddToFavorite}
 					isLoading={isLoading}
 				/>} />
-				<Route path="/favorites" element={<Favorites/>} />
-				<Route path="/orders" element={<Orders
+				<Route path="favorites" element={<Favorites/>} />
+				<Route path="orders" element={<Orders
 				ff
 				/>} />
 			</Routes>
